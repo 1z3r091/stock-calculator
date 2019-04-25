@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Stock Calculator</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="buy-amount">매수 금액 :</div>
+      <input class="b-amount" type="text" placeholder="원" autofocus/>
+      <div class="sell-amount">매도 금액 :</div>
+      <input class="s-amount" type="text" placeholder="원" /></br></br>
+      <button class="calculate">계산</button>
+    </div>
+    <div id="main">
+      <div class="yield">수익률</div>
+      <input class="yield-result result" disabled></input>
+      <div class="yield-per-stock">주당 손익금</div>
+      <input class="yield-per-stock-result result" disabled></input>
+    </div>
+    <div id="footer">
+      <div class="buy-fees">매수 수수료(%) +</div>
+      <input class="b-fees" type="text" placeholder="%" value="0.015" disabled/>
+      <div class="sell-fees">매도 수수료(%) +</div>
+      <input class="s-fees" type="text" placeholder="%" value="0.015" disabled/>
+      <div class="tax">세금(%)</div>
+      <input class="tax-amount" type="text" placeholder="%" value="0.3" disabled/>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
